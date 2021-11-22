@@ -32,7 +32,7 @@ export const CustomerList = () => {
             <h2>Customers List</h2>
             {customerMessage}
             {
-                customers.slice(0,5).map(
+                customers.slice(0, 5).map(
                     (customerObj) => {
                     return <p key={`customer--${customerObj.id}`}>{ customerObj.name }</p>
                 })
