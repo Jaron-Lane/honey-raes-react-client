@@ -12,13 +12,13 @@ export const CustomerList = () => {
         []
     )
 
-
     return (
         <>
+            <h2>Customers List</h2>
             {
                 customers.map(
                     (customerObj) => {
-                    return <h2 key={`customer--${customerObj.id}`}>{ customerObj.name }</h2>
+                    return <h3 key={`customer--${customerObj.id}`}>{ customerObj.name }</h3>
                 })
             }
         </>
