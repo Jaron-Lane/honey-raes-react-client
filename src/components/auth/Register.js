@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import "./Login.css"
 
 export const Register = (props) => {
     const [customer, setCustomer] = useState({})
     const conflictDialog = useRef()
 
-    const history = useNavigate()
+    const history = useHistory()
 
     const existingUserCheck = () => {
         return fetch(`http://localhost:8088/customers?email=${customer.email}`)
