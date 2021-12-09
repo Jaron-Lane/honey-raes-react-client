@@ -31,7 +31,7 @@ export const Register = (props) => {
                                 localStorage.setItem("honey_customer", createdUser.id)
                             }
                             
-                        }).then(() => history("/"))
+                        }).then(() => history.push("/"))
                 }
                 else {
                     conflictDialog.current.showModal()

@@ -8,21 +8,21 @@ export const Views = () => {
     return (
         <>
 
-                <Route exact path="/">
-                    <CustomerList />
-                </Route> 
-                
-                <Route path="/customers">
-                    <CustomerList />
-                </Route> 
-
-                <Route path="/employees">
-                    <EmployeeList />
-                </Route>
+            <Route exact path="/">
+                <CustomerList />
+            </Route> 
             
-                <Route path="/tickets">
-                    <TicketList />
-                </Route> 
+            <Route path="/customers">
+                <CustomerList />
+            </Route> 
+
+            <Route path="/employees">
+                <EmployeeList />
+            </Route>
+        
+            <Route path="/tickets">
+                <TicketList />
+            </Route> 
 
         </>
     )
