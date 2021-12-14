@@ -8,11 +8,7 @@ import { TicketForm } from "./serviceTickets/TicketForm";
 export const Views = () => {
     return (
         <>
-
-            <Route exact path="/">
-                <CustomerList />
-            </Route> 
-            
+        
             <Route path="/customers">
                 <CustomerList />
             </Route> 
